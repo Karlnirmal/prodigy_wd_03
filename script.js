@@ -24,7 +24,7 @@ function handleClick(e) {
   e.target.textContent = currentPlayer;
 
   if (checkWinner()) {
-    statusText.textContent = `Player ${currentPlayer} Wins!`;
+    statusText.textContent = `Congratulations ${currentPlayer} Wins!`;
     gameActive = false;
   } else if (cells.every(cell => cell !== "")) {
     statusText.textContent = "It's a Draw!";
